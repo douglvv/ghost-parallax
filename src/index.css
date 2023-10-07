@@ -4,4 +4,5 @@
   color: #000;
   top: 0;
   left: 0;
+  box-sizing: border-box;
 }

@@ -14,20 +14,29 @@ function App() {
     // <>
     <div>
       <Parallax pages={4}>
-        
+
         {/* Ghost */}
         <ParallaxLayer
-          sticky={{start: 0.5, end: 4}}
+          sticky={{ start: 0.5, end: 3 }}
           speed={1}
-          style={{textAlign: 'center'}}
+          style={{ textAlign: 'center' }}
         >
-          <img src={ghost} alt="ghost" style={{height: '350px'}} />
+          <img src={ghost} alt="ghost" style={{ height: '350px' }} />
         </ParallaxLayer>
 
-        
+        <ParallaxLayer
+          offset={0}
+          factor={4}
+          style={{
+            backgroundColor: '#03081b'
+          }}
+        />
+
         {/* Page 1 */}
         <ParallaxLayer
-          speed={0.5}
+          offset={0}
+          factor={1}
+          speed={0.6}
           style={{
             backgroundImage: `url(${bgSky})`,
             backgroundSize: 'cover'
@@ -35,29 +44,29 @@ function App() {
         />
 
         <ParallaxLayer
-          speed={0.65}
+          speed={0.15}
           style={{
             backgroundImage: `url(${planet})`,
-            backgroundSize: '25%',
+            backgroundSize: '20%',
             backgroundPosition: '75% 33%'
           }}
         />
 
         <ParallaxLayer
-          speed={1}
+          speed={0.35}
           style={{
             backgroundImage: `url(${mountain})`,
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
           }}
         />
 
         <ParallaxLayer
-          speed={1.25}
-          offset={0.25}
-          factor={1.25}
+          speed={0.5}
+          offset={0.2}
           style={{
             backgroundImage: `url(${cemetery})`,
-            backgroundSize: 'contain'
+            backgroundSize: '100% auto',
           }}
         />
 

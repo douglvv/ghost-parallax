@@ -1,5 +1,6 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
+import ghost from './assets/ghost_flying.gif'
 import bgSky from './assets/bg_space.jpg'
 import planet from './assets/planet.png'
 import mountain from './assets/bg_ice_mountain.png'
@@ -13,6 +14,17 @@ function App() {
     // <>
     <div>
       <Parallax pages={4}>
+        
+        {/* Ghost */}
+        <ParallaxLayer
+          sticky={{start: 0.75, end: 4}}
+          speed={1}
+          style={{textAlign: 'center'}}
+        >
+          <img src={ghost} alt="ghost" />
+        </ParallaxLayer>
+
+        
         {/* Page 1 */}
         <ParallaxLayer
           speed={0.5}
@@ -23,11 +35,11 @@ function App() {
         />
 
         <ParallaxLayer
-          speed={0.75}
+          speed={0.65}
           style={{
             backgroundImage: `url(${planet})`,
-            backgroundSize: '25% auto',
-            backgroundPosition: '100% 15%'
+            backgroundSize: '25%',
+            backgroundPosition: '75% 33%'
           }}
         />
 

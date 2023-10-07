@@ -17,11 +17,11 @@ function App() {
         
         {/* Ghost */}
         <ParallaxLayer
-          sticky={{start: 0.75, end: 4}}
+          sticky={{start: 0.5, end: 4}}
           speed={1}
           style={{textAlign: 'center'}}
         >
-          <img src={ghost} alt="ghost" />
+          <img src={ghost} alt="ghost" style={{height: '350px'}} />
         </ParallaxLayer>
 
         

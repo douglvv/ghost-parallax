@@ -5,7 +5,6 @@ import bgSky from './assets/bg_aurora.jpg'
 import planet from './assets/planet.png'
 import mountain from './assets/bg_ice_mountain.png'
 import cemetery from './assets/bg_cemetery.png'
-
 import capetao from './assets/near.png'
 import fundo_bottom from './assets/middle.png'
 import ground from './assets/layer_ground.png'
@@ -14,13 +13,12 @@ import caveiras from './assets/skeletons.gif'
 function App() {
 
   return (
-    // <>
     <div>
       <Parallax pages={2}>
 
         {/* Ghost */}
         <ParallaxLayer
-          sticky={{}}
+          sticky={{start: 0.6, end: 1}}
           speed={.25}
           style={{ textAlign: 'center' }}
         >
@@ -46,7 +44,6 @@ function App() {
             backgroundSize: 'cover'
           }}
         />
-
         <ParallaxLayer
           offset={0.1}
           speed={0.15}
@@ -56,7 +53,6 @@ function App() {
             backgroundPosition: '75% 25%'
           }}
         />
-
         <ParallaxLayer
           offset={0.1}
           speed={0.35}
@@ -66,7 +62,6 @@ function App() {
             backgroundPosition: 'center 100%'
           }}
         />
-
         <ParallaxLayer
           speed={0.5}
           offset={0.3}
@@ -78,7 +73,6 @@ function App() {
         />
 
         {/* Page 2 */}
-
         <ParallaxLayer
           offset={1}
           factor={1}
@@ -89,7 +83,6 @@ function App() {
             backgroundPosition: 'bottom'
           }}
         />
-
         <ParallaxLayer
           offset={1}
           factor={1}
@@ -100,7 +93,6 @@ function App() {
             backgroundPosition: 'bottom'
           }}
         />
-
         <ParallaxLayer
           offset={1}
           factor={1}
@@ -111,7 +103,6 @@ function App() {
             backgroundPosition: 'bottom'
           }}
         />
-
         <ParallaxLayer
           offset={1}
           factor={1}
@@ -122,7 +113,6 @@ function App() {
             backgroundPosition: '20% 110%'
           }}
         />
-
         <ParallaxLayer
           offset={1}
           factor={1}
@@ -134,11 +124,8 @@ function App() {
           }}
         />
 
-
-
       </Parallax>
     </div>
-    // </>
   )
 }
 

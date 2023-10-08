@@ -5,7 +5,7 @@ import bgSky from './assets/bg_space.jpg'
 import planet from './assets/planet.png'
 import mountain from './assets/bg_ice_mountain.png'
 import cemetery from './assets/bg_cemetery.png'
-
+import rain from './assets/rain.gif'
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <img src={ghost} alt="ghost" style={{ height: '350px' }} />
         </ParallaxLayer>
 
+        {/* Background */}
         <ParallaxLayer
           offset={0}
           factor={4}
@@ -44,29 +45,32 @@ function App() {
         />
 
         <ParallaxLayer
+          offset={0.1}
           speed={0.15}
           style={{
             backgroundImage: `url(${planet})`,
             backgroundSize: '20%',
-            backgroundPosition: '75% 33%'
+            backgroundPosition: '75% 25%'
           }}
         />
 
         <ParallaxLayer
+          offset={0.1}
           speed={0.35}
           style={{
             backgroundImage: `url(${mountain})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center 100%'
           }}
         />
 
         <ParallaxLayer
           speed={0.5}
-          offset={0.2}
+          offset={0.3}
           style={{
             backgroundImage: `url(${cemetery})`,
-            backgroundSize: '100% auto',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
           }}
         />
 
